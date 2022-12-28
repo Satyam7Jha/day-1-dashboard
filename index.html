@@ -9,24 +9,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=sans"
     />
-    <style>
-      body {
-        font-family: "sans", serif;
-      }
-      p {
-        color: grey;
-      }
-      h5 {
-        color: grey;
-      }
-    </style>
     <script
       src="https://kit.fontawesome.com/de01e3e79c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Dashboard</title>
   </head>
   <body class="container">
+    <!--Left side :nav bar && right home page-->
     <nav class="navbar">
       <section class="dashboard">
         <i
@@ -36,6 +26,7 @@
         <p class="dashboard-text">Dashboard</p>
       </section>
       <section class="nav-options">
+        <!--List of options in nav bar-->
         <div class="option">
           <i style="font-size: 20px" class="fa-solid fa-house"></i>
           <p class="option-text">Home</p>
@@ -80,13 +71,14 @@
       </section>
     </nav>
     <section class="home">
+      <!--Top section in home page-->
       <div class="search-bar-and-profile">
         <section class="search-bar">
           <i style="color: grey" class="fa-solid fa-magnifying-glass"></i>
           <input />
         </section>
         <section class="profile">
-          <i style="font-size: 22px; color: grey" class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-bell profile-icon"></i>
           <img
             src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512"
             class="profile-image"
@@ -109,17 +101,19 @@
           </div>
         </section>
         <section class="buttons">
+          <!--Grouped buttons-->
           <div class="button">New</div>
           <div class="button">Upload</div>
           <div class="button">Share</div>
         </section>
       </div>
       <div class="title">
-        <div style="width: 65%; padding-left: 15px">Project</div>
-        <div style="width: 30%; padding-left: 60px">Annoucnment</div>
+        <div style="width: 65%; margin-left: 30px">Your Projects</div>
+        <div style="width: 30%; margin-left: 40px">Annoucnment</div>
       </div>
       <div class="projects-annoucements-peoples">
         <section class="projects">
+          <!--Projects list -->
           <div class="project-card">
             <h5>Super cool project</h5>
             <p class="card-text">
@@ -205,6 +199,7 @@
             </div>
           </div>
         </section>
+        <!--Annoucements and peoples sections-->
         <section class="annoucements-peoples">
           <div class="annoucements">
             <div class="annoucement">
@@ -242,24 +237,24 @@
           <div class="peoples">
             <section class="people">
               <img
-                src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISERUQEhIVFRIVExYVFRUSFw8VEBUSFhUWFhYSFRUYHikiGBsmHBUXIjIiJio4Ly8vFyA0OTQuOCkuLywBCgoKDg0OGxAQGy4mICMuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQEDBAYHAgj/xABCEAABAwIDBQUFBgQEBgMAAAABAAIDBBESITEFBkFRYRMicYGRBzJCobEUI1JywdEzYoLwc7LC4RZTY5KisxVDo//EABsBAQACAwEBAAAAAAAAAAAAAAAEBQECAwYH/8QAMhEAAgIBAgQDBgYCAwAAAAAAAAECAxEEIQUSMUFRcbETMmGB0fAiQqHB4fFSkTM0Yv/aAAwDAQACEQMRAD8A7iiIgCIiAIiIAiIgCIiAIisTVDW9SspN9DWUlFZZfVt8zRqVHy1hP+yw5KkcT+67Rpb6kC3iEI7R/UlXVg4BWnVx6KIdWN6qn2wcj8l2Wn+BBlxKT/MS321392VRXHooj7YOR+SCrb1WfYLwNFxCX+ZNivHEK8yqaeKgmzNPEK4CtHTE7w4hZ8H9/Ang4HRelBNlI4rKhryNc1ylS10JlfEIS2ksEmiswzNdp6K8uTWOpOjJSWUERFgyEREAREQBERAEREAREQBERAEREAREQBeXG2ZR7gBcqJrq70W8K3NkfUaiNMcsv1NZwGQUTPW8s/osWeoLvDkran10qJ5vUa2drPckzjqV4RF2WxCbb3YREWTAREQBGuI0KIgL8dWRrn9VlRTB2npxUcqArRwTOsbpR6ku15CkaWsvk7XmoKCp4O9VlBcJ1p7MsdPqnDeL+RsKKOo6v4XacCpFQpRcXhl/TdG2PNH+giItTqEREAREQBERAEREAREQBERAF5c6wuV6UVtGq4XyGq3hHmeDjfdGqHMy3tCu9OA5qEkkLjcqs0hcbrwrKutQWDyeo1ErpZbKoiLoRwiLw9wAuTYID2rM87GDE9waBqXEALTd6d+2wkxQDFJxJ91vj16Lmu1dryzkumkLuhyaPAaKNZqYx2W5aabhdlq5p/hX6nWtob+UMVwJDIRwhbcf9xsPmoab2oR/BTyH8z2D6Arkj6wuOFnHK5/ZZMjsIA4kgfuVHepsfQtIcJ00eqb+b/bB06P2oZ96ny/lkz+bVnUntKpXG0kc0fWzHt/8Tf5LlKLC1FnibS4Xpn+Vryb/AHyfQGzNqwVDcUErZANcJzH5mnMeazV89UdXJE8SRvLHjRzTY/7joV1TcvfMVVoJrNqLZEZNlAGZA4P6enJSatQpvD2ZU6zhk6FzweY9/FfVfFfM3FZFNPbI6LHRSGslbGTi8olFJ0FTfunXgoOkmv3TrwWW11jdRrIZWC002p5JKcencn0VmnlxNvx4q8oLWNj0cZKSygiIsGQiIgCIiAIiIAiIgCIqEoDFrpsLbDU/Ra5WS3NuA+qztoVN7u8gopWNFfKsnl+I6l2Twun36hERSCtCIiA8PcACToFzPfbfIkmCB2lw5w4cw3rzPBT/ALR9tGCARsNnyZZahtjc/wB8wuPPfYElQtTa88qLzheii17afy+onmDRc/7kqJnqC/XTkrrWyTyBjGuc5xs1jQXOPgBqt22L7JdoTd6XBTt/6hxSf9jL28yFCbS6l+ouXQ0rZjLuJ5D6rI2gbBp5OW0b17n/APxjo4+27V0jS8kMwBtjYAZm/H0WuVceJhHHUeSynkNNPDL7DcXVSsDZ0+WA+XhyWeEMFF7hkc1wc0lrmkFrhqHDMELyqIZO67q7Y+10rJtH5teOUrTY+R1HQqYXPPZHUkioi4AxyD+oPaf8rV0NWtUuaCbPG6ulU3yguie3k1lepQGykYJMQ6qPVymkseizKOUcqp8r+BNUM2F1uBUutfBUzSSYmhQb4/mPR8PuynW/MvoiKOWYREQBERAEREAREQBYlfLZtuJWWoraT7utyXSqOZEXWWclT+OxD1r8wOSx16mddxPVeVaRWEeRm8ybCIiyahEVEBx72l1vaVrmXyjaG+ep+oWtbG2JNtCpbSQ/me83wMYNXO/biSFkbz1WOqqJec0noCQPouq+xjYohoftJH3tS4uJOojaSGNHTV39SprZ7tnt9JViuEPBLJsm6e6lNQRdnA3vEd+V1u1kPU8B0GSnwFUKqjFict9tOynFkNU0XDLxv6BxBY71BHmFygL6d2ps+OoifBILse0tcOh4jqDmPBfPW9G7c1BN2Uguw/w5Ld2Rv6O5j9F1rfYj2x35jUqyIsdcaE3HQ8lnUdTjHUa/urk8QcLH++qiHBzHciF0OJOKhVilqQ8cjxH6hZCA3r2SutUTDnD9Hf7ldRXF9wtqinq2l2THjsyeV9D6/Vdnabi40VhpXmGDzHF4OOo5uzS/TY9KiqiklYSFO+7QpLZsljh5qGoXajzWdC+zgeqjWRzlFnpLuWUZk6Cqqg5qqrz04REQBERAEREAREQBQVS+7nHxU082BPRa/Kcj4FSKF1ZV8TlhRXmyMVVRVVieZQREQBYG2q4QQSSn4Wk+dlmPcACSbAZknQBcm383r+0OMER+6ac3fjI5dL/RcrbFCOSXotLLUWJdl1NG2lKbEnVzvmTcrs+7e/EEVJTQxUtXMWQRtcYIHlgcGC/eNr53zXJNn7I+0udI+TsqaG3aykYjiOkUTfjkNjZvQk2AX0lu9AyGkghY12FkMYHanv2wi2INsAfBU88YR7WrOXgj9k730872wkSwzOvhjqYpInOsLkNJGFxsL2BWwqpwnIi3hcj0Ko1hvhtfwzy5rkd18QtO25WurmvpoKA1MVyHSzuMFOHAkXjcRjeQfiaLcityMds3A9BoSf2URvFvTT0YaJpCHP8AcijDnSvt+Fjcz4lZRhs5FW+zDaLA54bE4aiNj3Y7cgXtaCfS60rauzXtcY5GOZI34Xghw8uS77Qe0Sle8RydtTucbNFXG6JjjwAc67fVTW29i09XHhmja8DgdW30cxwzb5LpztdTl7NPofJoJaeRClaWoDx1Go/VbP7SdxH0REzCXwE2Dj77DwY+3yPFaNGx7QJQ04b4cVjgxWvhvpe3Bbpp9Di008MmVv8AuZvv2doKk9zRsh4dHfuudwSh7bjzHIq6t4TcHlHC+iF0OSa/g+io3hwDgbgi4I0IPFe1y32c7zGN4pJXfdvNoyfgk/D+U/XxXUlZ12KccnlNVppaexwfyfivv7xuXaQ94LPUdT+8PFSKxPqZo91k5Tuu0FXVj0X8Nvh+qyFWSWGz1tTzBP4L0CIiwbhERAEREAREQFirNmO8FBy+6fAqbrfcKhXDI+ClUe6U3EvfS+H7si1VUVVPPOoKhKqtL9pe3DDAIGGz5rgkaiLj66LSc1COWdqKZXWKuPV/eTW9/N8DO400DrQtNnOGshGo/L9VolVNhbfjoPFXAFGV78T8I4Zeaq5zcnlnsKaYUwUILb73ZvVDQ4jsyhb7soZUSfzSTyOD3nnhijDRyz5ro1dV1O05HU9BOaeliJZUVLQ4SukBt2EOmgFy4fiHgdV9mbWVE9Ldw7ejZIzCdZKYhzmSN5uY97mkDg9p4FdhgY1t7AC5ubAC7jqTzK4Te5NqWYmpUu5c9P36falWXj4apwnp3dHMyIHUG62ugnldC0ys7OQOIc1rsTL8S08Wm1xfOxzAKvkpJkA3jqel9B6fVaNnTlSKu+HwPriKhdj7IDZJKuVoNTK43cbExwg2jhYfhGEAkDVxJUxG4PaC034tto4HPL6+aAoZ6lqto45mGKZjZGOFi14DmnyKwN3N3YaTG2IvOPESZXueQ34WAu0aMreA1Urf1R+Qw/Efe6D8KZDRj7R2dDPGYZmCVjrXa6+A2IIvxOYWubW2TR1sMlEy7W4OzBgY8U8ZjdcNb3eyxNcLZZ6i+q2OuY50b42OwPdG5rX2vgcWkB9uNiQU+zNpo2x91kccYAN7Maxotck6ZBOxjlTe58r7QoZKKqkppfejfgdbQjVrh0IIPmslN+trMq9oVFTH7j3gNOl2sa1gd5ht/NWKOTEwcxl6LuiI+uxfaSDcEg8CMiDzBXd92NqfaqWKf4iLP/xGnC75i/muELpnskqiY54Twc14/rFj/wCseqk6aWJ48Sp4vVzUc/8Ai/0e3rg6JTDvBSKwqMd7yWapk+pSUe6TFD/Db5/UrJViiH3bfBX1Wy6s9XSsVx8l6BERanUIiIAiIgCIiAs1DbtIUItgsoKZlnEdVIofVFVxKO8ZfIiZG2JHVUV+tZnfmrCsE8o85Jcsmii4r7Qa3ta6UcI7RDyGfzJXagvn/bcmKpmdznl/zFRdW/wpFtwaObZS8F6/0R88mFpd/d1G7PZifc8M1kbUfkBzN/Redkt94+A+qgnoie3f2kaWqhqR/wDXIHHnh0dbrhJX0rFUNe0PABDgHBzTa4IuDyOS+W2tJIA1JsPE6LtG4G8LA87Mfdr4QGwl9wZWMAD7X/mDiP5SOS52LbJ2pazhnQAQPdGfMm9vDJUA55ry1yq4m2WvBciR0PFJAI2BgJIaLNva4aNG5chl5K/2l9QD46+oWoVe8FYHmNtMAeFxI76EArYtmdr2Te2Ix6uwiwHILClkkXaSdUFKbW/RJpvz2yv18DLx8gG+GvqVQCyoSsLa+046eJ00rg2NozPEng0DiScgFkjmje0Ha8rdoUcMEpjcAXSFpGUbnNLsQORAZG458lz2ffafaBkpK2oLYJnfdO7rGwvxEsMmADHHnhcDe2R1C81+8Rlq5auRmLtGvYGFzm4Y3NwABzcxZvLmVrv/ABFK0WgbFBla8LAJbf4rrv8APEu8Y4Ik5ZbMPaVE+CV8MrS2Rji1zTqCPqOIPEEK9ss5OHUFYU07nuL3uc5xzLnEucT1JzKy9l/F5fqtjmZ6332Rn76f/CZ/mWhBdB9kUR7SofwDI2+Zc4/6V2o/5EQ+Jf8AVn8vVHVKEZk9FmKxSNsD4rMpWYngdb+QUybw2yhog2lFd/3ZMxtsAOQXtEVaerwlsgiIgCIiAIiIAiIgCjNpRZ4uak1ZqI8TSPRb1y5ZZOGpq9pW49+3mQFRHdvVRylnCxssCrisb8D9VY1vseWvh+YsBfP+2WYaiZp4Tyj/APQr6BXGvaPsww1rpLdycdqDwxHJ49Rf+pctWsxT8CZwaajc4+K9P4yzQ9qHvAdP1Kv7LHdPj+is7Tb3gen0V7ZR7p8f0UA9IZZWdRbYqIrdnM9uE3aDZzQRoQ14IHosFVAQHXt0/abFIBFWWjk07Ufwn9XW9w/LwXQ6aoa9ocxwc06OaQWnwIXy/ZSe7215qWVr45HsaHtL2tJwPaCMQc3Q3C5utdjtG59JH0ohXiF1/MXVZm3aR0XIk9zRt4PaXSwFzIgZ5ASLNu2IEZWLyM/IFcs3k3mqK5+KV3dBOCNuUbPAcT1Kj9pUj4ZXxSAh7HlrgcswdfA6jxWMu8YpboiSslLqWa1+Fh8LeqhVnbTmuQ3lr4rDBWxzAapHZre6TzP0UcSpiljwsA9UBeC6/wCyug7Oj7Uixlkc/rhaOzb62J81yzZGzX1MzIGe882v+FurnHoBmvoXZlG2NjImizWNDQOgFgFJ00d3IqeK2fhjUureX5L6v0ZnRtsAFKbMjyL+eQ8AsCOMuIaOKm2MAAA0CzfPbHiacPpzPn7Lp5/0e0RFFLkIiIAiIgCIiAIiIAiIgI7aFP8AEPNRr2XFitisoutpLZjT6KTVZ2ZU63S7uyK27kBLGWmygN8dgispywZSsvJEf+pY90nkdPQ8Ft8sYcLFR8kZabFTNprlZRNSpmpwfTp8D5p2xTObdrmlr2OLXA6g6EHzWPst3vDwK7dvvuYytaZI7MqALXOTJANGycjycuKS0klPOYZmFjwbEOFjnoeo6qvtqlB79D1Gk1kNRHK2fdffYzCgV6mp3SODGNLnE2AGZK3XY24oFn1Lrn/lsOX9TuPkuEpKPUsqNNZc8QXz7L5/TJpVLTvldgjY57jwaCT8lv8Auj7N5nvbLVjs4wQezuDI+xvY2yaPn0C2zYEMcUzGMY1jBewaABfCc/FbiuPtW+hJt0apaTeXjPw+p7jC9rwxy9YgsI1ZB7x7pUtbnNH3wLB7ThkA5YhqOhXOdu+zAxNL4qkEXADZGd7M/iac/RdcmnABN7Aak6LUtt7R7Vwa33G/M8053Hod6NKrp/iW3c4hvFunPTfeEiSPi9uVj/M3h46LXCF357AQWkAgixBzBB1BXJN89hfZZ+4D2Ulyz+U3zZ5cOhC3rs5tma67QeyXtK/d7rwIOjjxOHIZlS4VrZ1IRZoBL3HRoJcTwAA1XQNh7p9kWulkLKzKWGJrDJhsSAZPhvi5mwtn0kwg5vCKW/UQpjmXV9F4+u3i8PH+k5v2Y7JjhMhfc1VhjaWvwxxn4MdsJcT7wBuLW4LpMTLDrxWubn7Imp+0bLheHls3bXBldI4feRyZDFhIGF3FpA4LdqGl+N3kP1UtyUI4KONc9Rc5dW+/30XgvkXKCnwjEdT8gs1EUKUm3ll/VXGuKjEIiLB0CIiAIiIAiIgCIiAIiIAiIgMCpouLfRRksfAhbErE1O12oz5rvC5rqV2o0EZ7w2fh2NWngw6aKC3k3cpq1mGdlyGktkbYSs/K79Dkt1noXDqFB7YjwsuOJDfK1/8ASpMr4qtye+Crp4fbLVQqi3FyaWfDfdryX8mmbC2BFSNIZ3nnWRwGMjgOg6KVS6Kgbzuz6vXXGuKhHojGnBBDhw4jUEaFStNvG4Cz2B3UZH0WGrToGnhbwRM1sqhZ7yyTX/ErP+W7/wAf3WPPvIT7rAPzEn5BRf2Ucz8lX7O3qmWclo6V2PNXXSSe+645DJvosZZn2dq8mmHMrBIUVFYRirE2jsVlWGxPJFn4g5oaXB2eQvlmMlnyQkeCu7M/jM/O36hb1++vNEfWR5tPYv8AzL0Ne2PseSGYxUsYZOGhsr5XNm7JmK/a37NtpXNOTAcJFzqFuG7m7klPUySYscUkbbl7num7YEEnvXsCS8nP8OWRJ2HZ2yhdzmsGJ5Bc7iSBYEnwFlP01GG5nM/IK6nKMNvA+ZUUXah8z6Nbt75+b3eH0Se3nksUVF8TvIfupJEUSUnJ5Ze00xqjyx/sIiLU6hERAEREAREQBERAEREAREQBERAEREAWu76wE02Joza8E21w2IP1C2JUIWJLKwdKbPZ2RnjOHk44vTXkaFdC2ruvDLdzPu3/AMuTD4t/ZaxW7qVMejRIObCb+hzUSVckekp19FnfD8Ht/BEtqTxzXsVI5FVl2dM33onjxa/9ljujI1BHiCFzZLTT6GWKhvNV7ZvNYKuxUz3e6xzvyhx+iGz26mT2reYXoPHMfJXKbd6qecoXDq+zR81MUu5LznLK0DkwEn1NlsoSfREazV0V+9JepCKW3e2A90rJnNwxtOKzsQLjbKw5cbrZ9nbCgh91uJ34n94+XAeSlV2hTh5ZV6riinFwrXXbL+Pgvr/ooFVEUgpwiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAqFEQ1Z5EbeQ9AvaIssywiIsGQiIgCIiAIiIAiIgCIiAIiIAiIgP/2Q=="
                 class="people-image"
               />
               <p class="people-name">@Carol</p>
             </section>
             <section class="people">
               <img
-                src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ33DCKDrEtR72fnouPQ_Gq9fvUKur43f8r4vTI0nH9L82mOviiSSG4bH09DGwHU0yUTKQ&usqp=CAU"
                 class="people-image"
               />
-              <p class="people-name">@Carol</p>
+              <p class="people-name">@Jenny</p>
             </section>
             <section class="people">
               <img
-                src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPDFqSJ6LrmUZ-WcCj_lQ-WADKOMxhJN1-wYLwUTCnA0AZRonOKxkzRgGYG_eSpVOXDo&usqp=CAU"
                 class="people-image"
               />
-              <p class="people-name">@Carol</p>
+              <p class="people-name">@Jaswanth</p>
             </section>
           </div>
         </section>
