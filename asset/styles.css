@@ -75,20 +75,26 @@ div.option:hover{
     padding: 15px;
     align-items: center;
     justify-content: space-between;
-    min-width: 1000px;
 
 }
 .search-bar{
     margin-left: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
 }
 
 input{
-  width: 550px;
 
+width: 100%;
   height: 20px;
   border-radius: 15px;
   margin-left: 5px;
   background-color:gray;
+  min-width: 100px;
+  max-width: 550px;
 }
 .profile{
     display: flex;
@@ -143,7 +149,7 @@ input{
 .buttons{
     display: flex;
     flex-direction: row;
-    min-width: 400px;
+    
     justify-content: space-around;
     margin-right: 50px;
 }
@@ -158,6 +164,7 @@ input{
     cursor: pointer;
     color:grey;
     font-weight: bold;
+    margin-right: 10px;
 }
 .button:hover{
     border: 2px solid white;
@@ -165,10 +172,13 @@ input{
 }
 
 .projects-annoucements-peoples{
+   
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-    background-color: #23242b;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+    
+
 }
 .projects{
     background-color:#23242b;
@@ -176,11 +186,9 @@ input{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-height: 50px;
 }
 .annoucements-peoples{
-    background-color: 23242b;
-    width: 30%;
+    width: fit-content;
 }
 
 
@@ -190,7 +198,7 @@ input{
     border-radius: 10px;
     padding:8px;
     border-left:10px solid #5d4093;
-    height: 150px;
+    
     min-width: 250px;
     margin: 5px;
 }
@@ -214,9 +222,9 @@ input{
    background-color: #2d3035;
    border-radius: 10px;
    padding: 20px;
-width: 70%;
-height: fit-content;
-min-width: 200px;
+    max-width: 250px;
+    height: fit-content;
+
 }
 .annoucement{
     
@@ -226,9 +234,10 @@ min-width: 200px;
 .peoples{
     background-color: #2d3035;
     border-radius: 10px;
-    width: 73%;
+  
     padding: 15px;
-min-width: 200px;
+    width: 260px;
+
 
 
 }
