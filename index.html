@@ -27,7 +27,7 @@
           ></i>
           <p class="dashboard-text">Dashboard</p>
         </div>
-        <i onClick="closeNav()" class="fa-solid fa-angles-left button-icon"></i>
+        <i onClick="closeNav()" class="fa-solid fa-angles-left button-icon close-icon"></i>
       </section>
       <section class="nav-options">
         <!--List of options in nav bar-->
@@ -319,6 +319,26 @@
         document.getElementById("sideNav").style.display = "None";
         document.getElementById("menu-button").style.visibility = "visible";
       }
+
+      function displayWindowSize() {
+        var w = document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight;
+        console.log(w, h, "hi");
+
+        if (w < 730) {
+          closeNav();
+        }
+        if (w > 730) {
+          openNav();
+        }
+
+        // document.getElementById("result").innerHTML =
+        //   "Width: " + w + ", " + "Height: " + h;
+      }
+
+      window.addEventListener("resize", displayWindowSize);
+
+      displayWindowSize();
     </script>
   </body>
 </html>
